@@ -1,0 +1,83 @@
+{% extends 'base.html'%} {% block title %} Member Data {% endblock %}
+
+{% block content %}
+
+<h1>User Information</h1>
+<form method="POST">
+    <h2>Personal Information</h2>
+    <div class="form-group">
+        <label for="fname">Full Name:</label>
+        <input
+            type="text"
+            class="form-control"
+            id="fname"
+            name="fname"
+            placeholder="Enter Full Name">
+    </div>
+    <div class="form-group">
+        <label for="nname">Nickname:</label>
+        <input
+            type="text"
+            class="form-control"
+            id="nname"
+            name="nname"
+            placeholder="Enter Nickname">
+    </div>
+    <div class="form-group">
+        <label for="birthdate">Birthdate</label>
+        <input
+            type="date"
+            id="birthdate"
+            name="birthdate">
+    </div>
+    <div class="form-group">
+        <label for="snumber">Student No.:</label>
+        <input
+            type="text"
+            class="form-control"
+            id="snumber"
+            name="snumber"
+            placeholder="Enter Student No.">
+    </div>
+    <h2>Contact Information</h2>
+    <div class="form-group">
+        <label for="comm">Preferred Method of Communication:</label>
+        <br>
+        <input
+            type="checkbox"
+            id="comm1"
+            name="comm1">
+        <label for="comm1">Messenger</label>
+        <input
+            type="checkbox"
+            id="comm2"
+            name="comm2">
+        <label for="comm2">Email</label>
+        <input
+            type="checkbox"
+            id="comm3"
+            name="comm3">
+        <label for="comm3">Mobile Phone / Landline</label>
+    </div>
+    <div class="form-group">
+        <label for="fblink">Facebook Link:</label>
+        <input
+            type="text"
+            class="form-control"
+            id="fblink"
+            name="fblink"
+            placeholder="Enter Facebook Link">
+    </div>
+    <div class="form-group">
+        <label for="contactno">Contact No.:</label>
+        <input
+            type="text"
+            class="form-control"
+            id="contactno"
+            name="contactno"
+            placeholder="Enter Contact No.">
+    </div>
+    <button type="submit" class="btn btn-primary">Update User Information</button>
+</form>
+
+{% endblock %}

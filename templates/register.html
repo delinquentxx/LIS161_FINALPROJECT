@@ -1,0 +1,39 @@
+{% extends 'base.html'%}
+
+{% block content %}
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+<link rel="stylesheet" href={{ url_for('static', filename='home/register/register.css') }}>
+
+<h1>This is the registration page.</h1>
+
+
+<form method="POST" action="">
+        {{ form.hidden_tag() }}
+
+        <label>Student ID:</label>
+    <br>
+        {{ form.studentid }}
+
+        <br><p></p>
+
+        <label>Email Address:</label>
+    <br>
+        {{ form.email }}
+
+        <br><p></p>
+
+
+        <label>Password:</label>
+    <br>
+        {{ form.password }}
+
+        <br><p></p>
+
+
+        {{ form.submit (class="btn btn-primary")}}
+
+</form>
+<p></p>
+<a href="{{ url_for('login')}}">Already have an account? Login</a>
+
+{% endblock %}

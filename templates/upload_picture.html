@@ -1,0 +1,26 @@
+{% extends 'base2.html'%} {% block title %} Create {% endblock %}
+
+{% block content %}
+
+<link rel="stylesheet" href={{ url_for('static', filename='home/create/create.css') }}>
+
+<h1>Upload New Picture</h1>
+
+<form method="POST" enctype="multipart/form-data">
+    <label>Select Date:</label>
+    <br>
+    <input type="date" name="date">
+    <p></p>
+    <label>Select Picture:</label>
+    <br>
+    <input type="file" name="image">
+    <p></p>
+    <label>Provide short description:</label>
+    <br>
+    <input type="text" name="description">
+    <br><br>
+    <button>Upload</button>
+
+</form>
+
+{% endblock %}

@@ -1,0 +1,23 @@
+{% extends 'base.html'%}
+
+{% block content %}
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+
+<h1>This is the login page.</h1>
+
+<form method="POST" action="">
+    {{ form.hidden_tag() }}
+    <label>Student ID:</label>
+    {{ form.studentid }}
+    <br><p></p>
+    <label>Password:</label>
+    {{ form.password }}
+      <br><p></p>
+    {{ form.submit (class="btn btn-primary") }}
+</form>
+
+<p></p>
+<a href="{{ url_for('register')}}">Don't have an account? Sign Up</a>
+
+
+{% endblock %}

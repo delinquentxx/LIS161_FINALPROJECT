@@ -1,0 +1,17 @@
+{% extends 'base2.html'%} {% block title %} Gallery {% endblock %}
+
+{% block content %}
+
+<link rel="stylesheet" href={{ url_for('static', filename='navbar/navbar.css') }}>
+
+<h1>Welcome to FLIPP Gallery!</h1>
+
+ <a href="{{ url_for('upload_picture') }}">Upload New Picture</a>
+
+ {% for picture in pictures %}
+ <p>{{ picture.id }} - {{ picture.date }} - {{ picture.description }} - {{ picture.FileName }} - <a href="{{url_for('download_picture', gallery_id=picture.id)}}">Download</a> <a href="{{url_for('delete_picture', gallery_id=picture.id)}}">Delete</a></p>
+ {% endfor %}
+
+
+
+{% endblock %}

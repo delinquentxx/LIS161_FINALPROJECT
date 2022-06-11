@@ -1,0 +1,73 @@
+*{
+  background-color: #F6F6F6;
+  font-family: sans-serif;
+  text-align: center;
+}
+
+
+h2{
+  font-weight: normal;
+  font-size: 3vw;
+  margin-top: 1%;
+}
+
+.h2-style{
+  font-style: italic;
+}
+
+h1{
+  font-weight: bolder;
+  font-size: 5vw;
+  margin-top: -2%;
+}
+
+.header{
+  text-align: center;
+  letter-spacing: 10px;
+  width: 100%;
+}
+
+.flippicon img{
+    width: 7% ;
+    cursor: pointer;
+  box-shadow: 0 0 30px 0 #7f7f7f3d;
+    cursor: pointer;
+    border-radius: 50%;
+}
+
+.flippicon{
+    margin-top: 3%;
+  text-align: center;
+}
+
+.login-btn{
+    background-color: yellow;
+  color: black;
+  text-decoration: none;
+  padding: 14px 160px;
+  border: none;
+  cursor: pointer;
+  width: 30%;
+    font-size: 1.25vw;
+    border-radius: 10px;
+
+}
+
+.register-btn{
+    background-color: darkblue;
+  color: white;
+  text-decoration: none;
+  padding: 14px 150px;
+  margin-top: 1%;
+  margin: 30px 10px 0px;
+    border-radius: 10px;
+  border: none;
+  cursor: pointer;
+  width: 30%;
+    font-size: 1.25vw
+}
+
+button:hover {
+  background-color: yellow;
+    color: black;
+}

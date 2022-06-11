@@ -1,0 +1,17 @@
+{% extends 'base2.html'%} {% block title %} Minutes {% endblock %}
+
+{% block content %}
+
+
+<h1>This is the Minutes of the Meeting page</h1>
+
+ <a href="{{ url_for('upload_minutes') }}">Upload New Minutes</a>
+
+ {% for file in files %}
+ <p>{{ file.id }} - {{ file.date }} - {{ file.details }} - {{ file.FileName }} - <a href="{{url_for('download_file', file_id=file.id)}}">Download</a></p>
+ {% endfor %}
+
+
+
+
+{% endblock %}

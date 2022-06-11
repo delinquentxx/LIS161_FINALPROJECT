@@ -1,0 +1,19 @@
+{% extends 'base2.html'%} {% block title %} Create {% endblock %}
+
+{% block content %}
+
+<link rel="stylesheet" href={{ url_for('static', filename='home/create/create.css') }}>
+
+<h1>Delete Announcement</h1>
+<h2>WARNING!</h2>
+<p>Any changes committed in this module is irreversible. Proceed with caution!</p>
+
+<form action="{{ url_for('process_delete_announcement') }}" id="del_an" method="post">
+
+  <label for="AID">Input Announcement ID:</label>
+    <input id="AID" name="AID">
+
+    <input type="submit" value="Submit" name="delete" />
+
+</form>
+{% endblock %}

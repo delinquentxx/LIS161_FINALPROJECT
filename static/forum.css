@@ -1,0 +1,162 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Inter', sans-serif;
+}
+/*Header Style Code*/
+.header-img {
+  position: absolute;
+  left: 0px;
+  top: 0px;
+  width: 100px;
+  height: 100px;
+}
+
+.header {
+  background-color: #f1f1f1;
+  padding: 10px;
+  text-align: center;
+  width: 100%;
+}
+
+/*NavigationBar Style Code*/
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 5px;
+  overflow: hidden;
+  background-color: #07117a;
+}
+
+li {
+  float: left;
+}
+
+li a, .dropbtn {
+  display: inline-block;
+  color: #f5ec78;
+  font-family: 'Inter', sans-serif;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+li a:hover, .dropdown:hover .dropbtn {
+  background-color: #edc40c;
+  color: #040833;
+}
+
+li a.active {
+  background-color: #f5d98e;
+  color: 040833;
+}
+
+li.dropdown {
+  display: inline-block;
+}
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #2834b8;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 1;
+}
+
+.dropdown-content a {
+  color: #fcf8b6;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+  text-align: left;
+}
+
+.dropdown-content a:hover {
+  background-color: #ffec96;
+  color: #040833;
+}
+
+.dropdown:hover .dropdown-content {
+  display: block;
+}
+
+/*Forum Header Style Code*/
+.forum-head {
+  margin-top: 20px;
+  float: left;
+  width: 100%;
+  background-color: #ffec96;
+}
+
+.forum-title{
+    padding: 10px 1px 1px 30px;
+    margin: 0;
+    color: #07117a;
+}
+
+.post-button {
+  background-color: #07117a;
+  border: none;
+  color: #fcf8b6;
+  padding: 15px 32px;
+  text-align: center;
+  font-size: 16px;
+  margin: 15px 30px 30px 1px;
+  cursor: pointer;
+  float: right;
+}
+
+.post-button:hover {
+  background-color: #2834b8;
+  color: #fcf8b6;
+}
+
+/*Forum Posts Section*/
+.forum {
+  margin-top: 10px;
+  float: left;
+  width: 100%;
+  padding: 0;
+  background-color: #f1f1f1;
+}
+
+.forum-posts{
+    margin: 20px;
+    padding: 20px;
+}
+
+
+.forum-row{
+    display: grid;
+    grid-template-columns: 7% 60% 13% 20%;
+}
+
+.subforum-column{
+    padding: 10px;
+    margin:4px;
+    border-radius: 5px;
+    background-color:white;
+}
+
+text-align: left;
+
+.subforum-description *{
+    margin-block: 0;
+}
+
+.center{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.subforum-icon i{
+    font-size: 45px;
+}
+
+.subforum-devider{
+    display: none;
+}

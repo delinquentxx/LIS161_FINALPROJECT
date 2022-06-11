@@ -1,0 +1,25 @@
+{% extends 'base2.html'%} {% block title %} Create {% endblock %}
+
+{% block content %}
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+
+<h1>Create New Announcement</h1>
+
+<form method="POST" action="">
+    {{ form.hidden_tag() }}
+    <label>Date:</label>
+    <br>
+    {{ form.date }}
+    <br><p></p>
+    <label>Enter Committee:</label>
+    <br>
+    {{ form.committee }}
+    <br><p></p>
+    <label>Add Message:</label>
+    <br>
+    {{ form.message }}
+    <br><p></p>
+    {{ form.submit (class="btn btn-primary") }}
+</form>
+
+{% endblock %}
