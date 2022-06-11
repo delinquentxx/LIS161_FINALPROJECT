@@ -1,14 +1,13 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="1e89c885-67eb-4708-9236-1bb86ba9a2f7" name="Changes" comment="- removed forum.html&#10;- added gallery.css&#10;- modified gallery.html&#10;- buttons in minutes.html">
-      <change afterPath="$PROJECT_DIR$/static/register.css" afterDir="false" />
+    <list default="true" id="1e89c885-67eb-4708-9236-1bb86ba9a2f7" name="Changes" comment="- designed dashboard.html&#10;- added register.css&#10;- fixed register.html">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/flipp.db" beforeDir="false" afterPath="$PROJECT_DIR$/flipp.db" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/dashboard_extension/dashboard.css" beforeDir="false" afterPath="$PROJECT_DIR$/static/dashboard_extension/dashboard.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/dashboard.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/dashboard.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/login.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/login.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/register.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/register.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/create.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/create.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/delete_announcement.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/delete_announcement.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/profile.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/profile.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/upload_minute.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/upload_minute.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/upload_picture.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/upload_picture.html" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -101,7 +100,14 @@
       <option name="project" value="LOCAL" />
       <updated>1654950911641</updated>
     </task>
-    <option name="localTasksCounter" value="5" />
+    <task id="LOCAL-00005" summary="- designed dashboard.html&#10;- added register.css&#10;- fixed register.html">
+      <created>1654954636819</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1654954636819</updated>
+    </task>
+    <option name="localTasksCounter" value="6" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -121,6 +127,7 @@
     <MESSAGE value="- fixed process_delete_announcement&#10;- removed dropdown from the navbar&#10;- deleted calendar.html&#10;- Changed ID to Announcement id in dashboard.html&#10;- created login.css&#10;- merged login.html from bela (NEED FIX)&#10;- added requirements.txt" />
     <MESSAGE value="- fixed some pages that does not include @login_required&#10;- ADDED UPDATE PASSWORD FUNCTIONALITY (YEYYYYY)&#10;- designed minutes.html with minutes.css&#10;- added form in profile.html for updating password" />
     <MESSAGE value="- removed forum.html&#10;- added gallery.css&#10;- modified gallery.html&#10;- buttons in minutes.html" />
-    <option name="LAST_COMMIT_MESSAGE" value="- removed forum.html&#10;- added gallery.css&#10;- modified gallery.html&#10;- buttons in minutes.html" />
+    <MESSAGE value="- designed dashboard.html&#10;- added register.css&#10;- fixed register.html" />
+    <option name="LAST_COMMIT_MESSAGE" value="- designed dashboard.html&#10;- added register.css&#10;- fixed register.html" />
   </component>
 </project>

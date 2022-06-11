@@ -3,9 +3,11 @@
 {% block content %}
 
 <link rel="stylesheet" href={{ url_for('static', filename='home/create/create.css') }}>
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
 
-<h1>Upload New Picture</h1>
-
+<h1 style="margin: 20px;">Upload New Picture</h1>
+<body>
+<div style="margin: 20px;">
 <form method="POST" enctype="multipart/form-data">
     <label>Select Date:</label>
     <br>
@@ -19,7 +21,7 @@
     <br>
     <input type="text" name="description">
     <br><br>
-    <button>Upload</button>
+    <button class="btn btn-primary">Upload</button>
 
 </form>
 
