@@ -1,17 +1,45 @@
-{% extends 'base2.html'%} {% block title %} Gallery {% endblock %}
+{% extends 'base2.html'%} {% block title %} Home {% endblock %}
 
 {% block content %}
 
-<link rel="stylesheet" href={{ url_for('static', filename='navbar/navbar.css') }}>
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+<link rel="stylesheet" href={{ url_for('static', filename='gallery.css') }}>
 
-<h1>Welcome to FLIPP Gallery!</h1>
+<div class="div1">
+    <h1>Welcome to FLIPP Gallery!</h1>
+    <br>
+    <p><i>Here you can upload any image that relates to the organisation</i></p>
+    <p><i>This could be from org events, meetings, or any other miscellaneous events.</i></p>
+</div>
+<div class="div1">
+    <a href="{{ url_for('upload_picture') }}" class="btn btn-primary">Upload New Picture</a>
+</div>
 
- <a href="{{ url_for('upload_picture') }}">Upload New Picture</a>
-
- {% for picture in pictures %}
- <p>{{ picture.id }} - {{ picture.date }} - {{ picture.description }} - {{ picture.FileName }} - <a href="{{url_for('download_picture', gallery_id=picture.id)}}">Download</a> <a href="{{url_for('delete_picture', gallery_id=picture.id)}}">Delete</a></p>
- {% endfor %}
-
-
+<div>
+    {% for picture in pictures %}
+    <table class="fixed" width="100%">
+        <col width="10%" />
+        <col width="20%" />
+        <col width="50%" />
+        <col width="10%" />
+        <col width="10%" />
+        <tr>
+            <th>ID</th>
+            <th>Date</th>
+            <th>Description</th>
+            <th>Link</th>
+            <th>Remove</th>
+        </tr>
+        <tr>
+            <td>{{ picture.id }}</td>
+            <td>{{ picture.date }}</td>
+            <td>{{ picture.description }}</td>
+            <td><a href="{{url_for('download_picture', gallery_id=picture.id)}}" class="btn btn-success">Download</a></td>
+            <td><a href="{{url_for('delete_picture', gallery_id=picture.id)}}" class="btn btn-danger">Delete</a></td>
+        </tr>
+    </table>
+    <!-- <p>{{ picture.id }} - {{ picture.date }} - {{ picture.description }} - {{ picture.FileName }} - <a href="{{url_for('download_picture', gallery_id=picture.id)}}">Download</a> <a href="{{url_for('delete_picture', gallery_id=picture.id)}}">Delete</a></p> -->
+    {% endfor %}
+</div>
 
 {% endblock %}
