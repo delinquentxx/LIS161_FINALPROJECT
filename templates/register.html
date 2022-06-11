@@ -1,39 +1,46 @@
-{% extends 'base.html'%}
+{% extends 'base.html'%} {% block title %} Register {% endblock %}
 
 {% block content %}
 <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
-<link rel="stylesheet" href={{ url_for('static', filename='home/register/register.css') }}>
+<link rel="stylesheet" href={{ url_for('static', filename='login/login.css') }}>
 
-<h1>This is the registration page.</h1>
+<div class="left-welcome">
+  <div class="info-box">
+    <h6>University of the Philippines Future Library and
+      Information Professionals of the Philippines</h6>
+    <h2>What is UP FLIPP?</h2>
+    <p>An organization housed within the School of Library and
+      Information Studies (SLIS) of the University of the Philippines Diliman
+      which aims to promote excellence in and awareness of
+      the role of librarianship in today's society through efforts such
+      as the annual LibSpeak congress and other activities.</p>
+      </div>
 
+    <div class="flippicon">
+      <img src={{ url_for('static', filename='navbar/FLIPP_LOGO.png') }}>
+    </div>
+</div>
+
+<div class="right-welcome" class="input-group">
 
 <form method="POST" action="">
-        {{ form.hidden_tag() }}
-
-        <label>Student ID:</label>
+    {{ form.hidden_tag() }}
+    <label>Student ID:</label>
+    {{ form.studentid (class="input-field-login")}}
     <br>
-        {{ form.studentid }}
-
-        <br><p></p>
-
-        <label>Email Address:</label>
-    <br>
-        {{ form.email }}
-
-        <br><p></p>
-
-
-        <label>Password:</label>
-    <br>
-        {{ form.password }}
-
-        <br><p></p>
-
-
-        {{ form.submit (class="btn btn-primary")}}
-
+    <label>Email Address:</label>
+    {{ form.email (class="input-field-login")}}
+      <br>
+    <label>Password:</label>
+    {{ form.password (class="input-field-login")}}
+      <br>
+    {{ form.submit (class="login-btn") }}
+    <br><br>
+    <a href="{{ url_for('login')}}">Already have an account? Login</a>
 </form>
-<p></p>
-<a href="{{ url_for('login')}}">Already have an account? Login</a>
+
+
+</div>
+
 
 {% endblock %}

@@ -3,7 +3,6 @@
 {% block content %}
 
 <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
-<link rel="stylesheet" href={{ url_for('static', filename='dashboard_extension/dashboard.css') }}>
 
 <body>
     <div class="text-center"><h1>Welcome User!</h1></div>
@@ -12,10 +11,9 @@
     </div>
     <div class="container" >
         <h2 stlye="text-align:left;">Announcements</h2>
+    <a class="btn btn-primary" href="{{ url_for('create') }}">Create New Announcement</a>          <a class="btn btn-warning" href="{{ url_for('delete_announcement') }}">Delete Announcement</a>
     </div>
-    <div>
-    <a class="btn btn-primary" href="{{ url_for('create') }}">Create New Announcement</a>  <a class="btn btn-primary" href="{{ url_for('delete_announcement') }}">Delete Announcement</a>
-    </div>
+
     </div>
 
   <br>
@@ -33,24 +31,20 @@
     <col width="30%" />
     <col width="40%" />
     <tr>
-        <th>Announcement No</th>
-        <th>Date</th>
-        <th>Committee</th>
-        <th>Message</th>
+        <th style="text-align:center;  background-color: #337ab7; color: white;">Announcement No</th>
+        <th style="text-align:center; background-color: #337ab7; color: white;">Date</th>
+        <th style="text-align:center; background-color: #337ab7; color: white;">Committee</th>
+        <th style="text-align:center; background-color: #337ab7; color: white;">Message</th>
     </tr>
     <tr>
-        <td>{{ announcement.id }}</td>
-        <td>{{ announcement.date }}</td>
-        <td>{{ announcement.committee }}</td>
-        <td>{{ announcement.message }}</td>
+        <td style="text-align:center;">{{ announcement.id }}</td>
+        <td style="text-align:center;">{{ announcement.date }}</td>
+        <td style="text-align:center;">{{ announcement.committee }}</td>
+        <td style="text-align:center;">{{ announcement.message }}</td>
     </tr>
 </table>
 
 
-
-
-
-<!-- <p>{{ announcement.id }} - {{ announcement.date }} - {{ announcement.committee }} - {{ announcement.message }} </p>-->
  {% endfor %}
 
 

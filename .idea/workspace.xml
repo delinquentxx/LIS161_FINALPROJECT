@@ -1,15 +1,14 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="1e89c885-67eb-4708-9236-1bb86ba9a2f7" name="Changes" comment="- fixed some pages that does not include @login_required&#10;- ADDED UPDATE PASSWORD FUNCTIONALITY (YEYYYYY)&#10;- designed minutes.html with minutes.css&#10;- added form in profile.html for updating password">
-      <change afterPath="$PROJECT_DIR$/static/gallery.css" afterDir="false" />
+    <list default="true" id="1e89c885-67eb-4708-9236-1bb86ba9a2f7" name="Changes" comment="- removed forum.html&#10;- added gallery.css&#10;- modified gallery.html&#10;- buttons in minutes.html">
+      <change afterPath="$PROJECT_DIR$/static/register.css" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/flipp.db" beforeDir="false" afterPath="$PROJECT_DIR$/flipp.db" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/static/dashboard_extension/dashboard.css" beforeDir="false" afterPath="$PROJECT_DIR$/static/dashboard_extension/dashboard.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/forum.html" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/templates/dashboard.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/dashboard.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/gallery.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/gallery.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/minutes.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/minutes.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/login.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/login.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/register.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/register.html" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -95,7 +94,14 @@
       <option name="project" value="LOCAL" />
       <updated>1654948218434</updated>
     </task>
-    <option name="localTasksCounter" value="4" />
+    <task id="LOCAL-00004" summary="- removed forum.html&#10;- added gallery.css&#10;- modified gallery.html&#10;- buttons in minutes.html">
+      <created>1654950911641</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1654950911641</updated>
+    </task>
+    <option name="localTasksCounter" value="5" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -114,6 +120,7 @@
     <MESSAGE value="- added venv" />
     <MESSAGE value="- fixed process_delete_announcement&#10;- removed dropdown from the navbar&#10;- deleted calendar.html&#10;- Changed ID to Announcement id in dashboard.html&#10;- created login.css&#10;- merged login.html from bela (NEED FIX)&#10;- added requirements.txt" />
     <MESSAGE value="- fixed some pages that does not include @login_required&#10;- ADDED UPDATE PASSWORD FUNCTIONALITY (YEYYYYY)&#10;- designed minutes.html with minutes.css&#10;- added form in profile.html for updating password" />
-    <option name="LAST_COMMIT_MESSAGE" value="- fixed some pages that does not include @login_required&#10;- ADDED UPDATE PASSWORD FUNCTIONALITY (YEYYYYY)&#10;- designed minutes.html with minutes.css&#10;- added form in profile.html for updating password" />
+    <MESSAGE value="- removed forum.html&#10;- added gallery.css&#10;- modified gallery.html&#10;- buttons in minutes.html" />
+    <option name="LAST_COMMIT_MESSAGE" value="- removed forum.html&#10;- added gallery.css&#10;- modified gallery.html&#10;- buttons in minutes.html" />
   </component>
 </project>
