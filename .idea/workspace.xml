@@ -1,16 +1,14 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="1e89c885-67eb-4708-9236-1bb86ba9a2f7" name="Changes" comment="- added venv">
-      <change afterPath="$PROJECT_DIR$/requirements.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/static/login/login.css" afterDir="false" />
+    <list default="true" id="1e89c885-67eb-4708-9236-1bb86ba9a2f7" name="Changes" comment="- fixed process_delete_announcement&#10;- removed dropdown from the navbar&#10;- deleted calendar.html&#10;- Changed ID to Announcement id in dashboard.html&#10;- created login.css&#10;- merged login.html from bela (NEED FIX)&#10;- added requirements.txt">
+      <change afterPath="$PROJECT_DIR$/static/minutes.css" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app.py" beforeDir="false" afterPath="$PROJECT_DIR$/app.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/flipp.db" beforeDir="false" afterPath="$PROJECT_DIR$/flipp.db" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/base2.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/base2.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/calendar.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/dashboard.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/dashboard.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/templates/login.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/login.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/minutes.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/minutes.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/profile.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/profile.html" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -82,7 +80,14 @@
       <option name="project" value="LOCAL" />
       <updated>1654938241948</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="- fixed process_delete_announcement&#10;- removed dropdown from the navbar&#10;- deleted calendar.html&#10;- Changed ID to Announcement id in dashboard.html&#10;- created login.css&#10;- merged login.html from bela (NEED FIX)&#10;- added requirements.txt">
+      <created>1654944377593</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1654944377593</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -99,6 +104,7 @@
   <component name="VcsManagerConfiguration">
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
     <MESSAGE value="- added venv" />
-    <option name="LAST_COMMIT_MESSAGE" value="- added venv" />
+    <MESSAGE value="- fixed process_delete_announcement&#10;- removed dropdown from the navbar&#10;- deleted calendar.html&#10;- Changed ID to Announcement id in dashboard.html&#10;- created login.css&#10;- merged login.html from bela (NEED FIX)&#10;- added requirements.txt" />
+    <option name="LAST_COMMIT_MESSAGE" value="- fixed process_delete_announcement&#10;- removed dropdown from the navbar&#10;- deleted calendar.html&#10;- Changed ID to Announcement id in dashboard.html&#10;- created login.css&#10;- merged login.html from bela (NEED FIX)&#10;- added requirements.txt" />
   </component>
 </project>

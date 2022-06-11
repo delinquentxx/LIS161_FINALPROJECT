@@ -83,6 +83,12 @@ class CreateAnnouncementForm(FlaskForm):
 
     submit = SubmitField("Post Announcement")
 
+class UpdatePasswordForm(FlaskForm):
+    studentid = StringField(validators=[InputRequired(), Length(min=10, max=10)], render_kw={"placeholder": "Student ID"})
+    password = PasswordField(validators=[InputRequired(), Length (min=4, max=20)], render_kw={"placeholder": "Password"})
+    new_password = PasswordField(validators=[InputRequired(), Length (min=4, max=20)], render_kw={"placeholder": "Enter New Password"})
+    submit = SubmitField('Update')
+
 
 
 @app.route('/login', methods=['GET', 'POST'])
@@ -124,6 +130,7 @@ def dashboard():
 
 
 @app.route('/create', methods=['GET', 'POST'])
+@login_required
 def create():
     form = CreateAnnouncementForm()
 
@@ -136,10 +143,12 @@ def create():
 
 
 @app.route('/delete_announcement', methods=['GET'])
+@login_required
 def delete_announcement():
     return render_template("delete_announcement.html")
 
 @app.route('/process_delete_announcement', methods=['post'])
+@login_required
 def process_delete_announcement():
     announcement_id = request.form['AID']
     announcement_to_delete = Announcement.query.get_or_404(announcement_id)
@@ -154,6 +163,7 @@ def gallery():
     return render_template("gallery.html", pictures=pictures)
 
 @app.route('/upload_picture', methods=['GET', 'POST'])
+@login_required
 def upload_picture():
 
     if request.method == 'POST':
@@ -170,11 +180,13 @@ def upload_picture():
     return render_template('upload_picture.html')
 
 @app.route('/download-picture/<int:gallery_id>', methods=['GET', 'POST'])
+@login_required
 def download_picture(gallery_id):
     image = Gallery.query.filter_by(id=gallery_id).first()
     return send_file(BytesIO(image.image), attachment_filename=image.filename, as_attachment=True)
 
 @app.route('/delete-picture/<int:gallery_id>', methods=['GET', 'POST'])
+@login_required
 def delete_picture(gallery_id):
     picture = Gallery.query.get_or_404(gallery_id)
     db.session.delete(picture)
@@ -188,6 +200,7 @@ def minutes():
     return render_template("minutes.html", files=files)
 
 @app.route('/upload_minutes', methods=['GET', 'POST'])
+@login_required
 def upload_minutes():
 
     if request.method == 'POST':
@@ -204,14 +217,26 @@ def upload_minutes():
     return render_template('upload_minute.html')
 
 @app.route('/download-file/<int:file_id>', methods=['GET', 'POST'])
+@login_required
 def download_file(file_id):
     file = Minutes.query.filter_by(id=file_id).first()
     return send_file(BytesIO(file.file), attachment_filename=file.filename, as_attachment=True)
 
-@app.route('/profile', methods=["GET"])
+
+@app.route("/profile", methods=["GET", "POST"])
 @login_required
 def profile():
-    return render_template("profile.html")
+    form = UpdatePasswordForm()
+    if form.validate_on_submit():
+        user = User.query.filter_by(studentid=form.studentid.data).first()
+        if user:
+            if bcrypt.check_password_hash(user.password, form.password.data):
+                hashed_password = bcrypt.generate_password_hash((form.new_password.data))
+                current_user.password = hashed_password
+                db.session.commit()
+        return redirect(url_for("profile"))
+
+    return render_template('profile.html', form=form)
 
 
 @app.route('/logout', methods=['GET', 'POST'])

@@ -5,6 +5,22 @@
 <h1>Change Password</h1>
 
 
+<form method="POST" action="">
+    {{ form.hidden_tag() }}
+    <label>Student ID:</label>
+    {{ form.studentid (class="input-field-login")}}
+    <br>
+    <label>Enter Old Password:</label>
+    {{ form.password (class="input-field-login")}}
+      <br>
+    <label>Enter New Password:</label>
+    {{ form.new_password (class="input-field-login")}}
+      <br>
+    {{ form.submit (class="login-btn") }}
+    <br>
+</form>
+
+
 
 
 {% endblock %}

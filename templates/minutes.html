@@ -2,15 +2,42 @@
 
 {% block content %}
 
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+<link rel="stylesheet" href={{ url_for('static', filename='minutes.css') }}>
 
-<h1>This is the Minutes of the Meeting page</h1>
+<div class="div1">
+    <h1>Minutes of the Meeting</h1>
+    <br>
+    <p><i>All the minutes from meetings will be uploaded here.</i></p>
+    <p><i>REDOMA will be responsible for uploading the minutes. Any concerns in regards to the minutes content shall be addressed to them.</i></p>
+</div>
+<div class="div1">
+    <a href="{{ url_for('upload_minutes') }}" class="btn btn-primary">Upload New Minutes</a>
+</div>
 
- <a href="{{ url_for('upload_minutes') }}">Upload New Minutes</a>
-
- {% for file in files %}
- <p>{{ file.id }} - {{ file.date }} - {{ file.details }} - {{ file.FileName }} - <a href="{{url_for('download_file', file_id=file.id)}}">Download</a></p>
- {% endfor %}
-
+<div>
+    {% for file in files %}
+    <table class="fixed" width="100%">
+        <col width="10%" />
+        <col width="20%" />
+        <col width="50%" />
+        <col width="20%" />
+        <tr>
+            <th>ID</th>
+            <th>Date</th>
+            <th>Minutes Description</th>
+            <th>Link</th>
+        </tr>
+        <tr>
+            <td>{{ file.id }}</td>
+            <td>{{ file.date }}</td>
+            <td>{{ file.details }}</td>
+            <td><a href="{{url_for('download_file', file_id=file.id)}}">Download</a></td>
+        </tr>
+    </table>
+    <!-- <p>{{ file.id }} - {{ file.date }} - {{ file.details }} - {{ file.FileName }} - <a href="{{url_for('download_file', file_id=file.id)}}">Download</a></p>-->
+    {% endfor %}
+</div>
 
 
 
