@@ -6,16 +6,27 @@
 <link rel="stylesheet" href={{ url_for('static', filename='dashboard_extension/dashboard.css') }}>
 
 <body>
-<h2>Announcements!</h2>
+    <div class="text-center"><h1>Welcome User!</h1></div>
+    <div class="text-center">
+        <p><i>Here you will find relevant information for members of UP FLIPP</i></p>
+    </div>
+    <div class="container" >
+        <h2 stlye="text-align:left;">Announcements</h2>
+    </div>
+    
 <br>
 
  {% for announcement in announcements %}
-<table>
+<table class="fixed" width="100%">
+    <col width="10%" />
+    <col width="20%" />
+    <col width="30%" />
+    <col width="40%" />
     <tr>
         <th>ID</th>
         <th>Date</th>
         <th>Committee</th>
-        <th>Message></th>
+        <th>Message</th>
     </tr>
     <tr>
         <td>{{ announcement.id }}</td>

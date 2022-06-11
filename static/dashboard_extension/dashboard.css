@@ -21,3 +21,15 @@ a.one:hover, a.one:active {
   color: white;
 }
 
+th, td {
+  padding: 15px;
+  padding-top: 20px;
+  padding-bottom: 20px;
+  padding-left: 30px;
+  padding-right: 30px;
+}
+
+table {
+  border-spacing: 30px;
+  border: 1px gray;
+}
