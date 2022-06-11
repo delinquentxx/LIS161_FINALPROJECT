@@ -1,0 +1,135 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: sans-serif;
+}
+
+.left-welcome{
+    height: 100%;
+    width: 50%;
+  background-color: #F6F6F6;
+    background-position: center;
+    background-size: cover;
+    position: absolute;
+}
+
+.flippicon img{
+    width: 80px ;
+    margin: 10 12px;
+    cursor: pointer;
+}
+
+.flippicon{
+    margin: 1px auto;
+
+}
+
+h6 {
+  text-align: left;
+    letter-spacing: 4px;
+    font-weight: lighter;
+    width: 45%;
+    margin-left: 80px;
+    font-size: 0.75vw;
+}
+
+h2 {
+  text-align: left;
+    letter-spacing: 4px;
+    font-weight: bolder;
+    width: 90%;
+    margin-top: 100px;
+  margin-bottom: 20px;
+  margin-right: 50px;
+  margin-left: 0px;
+    font-size: 5vw;"
+}
+
+p {
+  text-align: justify;
+    letter-spacing: 4px;
+    font-weight: normal;
+    width: 90%;
+    margin-top: 10px;
+  margin-bottom: 100px;
+  margin-right: 0px;
+  margin-left: 0px;
+    font-size: 1.5vw;
+}
+
+.info-box{
+    width: 50%;
+    height: 100%;
+  text-align: center;
+    position: fixed;
+    padding: 30px;
+}
+
+.right-welcome{
+    margin-top: 100px;
+  margin-bottom: 100px;
+  margin-right: 50px;
+  margin-left: 50px;
+    left: 50%;
+    position: fixed;
+}
+
+h2 {
+  text-align: center;
+    letter-spacing: 4px;
+    font-weight: bolder;
+    width: 95%;
+    margin-top: 70px;
+  margin-bottom: 20px;
+  margin-right: 0px;
+  margin-left: 0px;
+    font-size: 2vw;
+}
+.toggle-btn{
+    padding: 10px 30px;
+    cursor: pointer;
+    background: transparent;
+    border: 0;
+    outline: none;
+    position: relative;
+}
+
+
+.input-field-login{
+    width: 100%;
+  padding: 20px 20px;
+  margin: 10px 10px;
+  display: inline-block;
+  border: 1px solid #ccc;
+    border-radius: 10px;
+    font-size: 1.25vw;
+}
+
+.login-btn{
+    background-color: darkblue;
+  color: white;
+  padding: 14px 20px;
+  border: none;
+  cursor: pointer;
+  width: 100%;
+    font-size: 1.25vw;
+  margin: 70px 10px 0px;
+    border-radius: 10px;
+}
+
+button:hover {
+  background-color: yellow;
+    color: black;
+}
+
+.register-btn{
+    background-color: white;
+  color: black;
+  padding: 14px 20px;
+  margin: 30px 10px 0px;
+    border-radius: 10px;
+  border: none;
+  cursor: pointer;
+  width: 100%;
+    font-size: 1.25vw
+}

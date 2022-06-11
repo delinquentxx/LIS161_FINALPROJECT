@@ -142,7 +142,8 @@ def delete_announcement():
 @app.route('/process_delete_announcement', methods=['post'])
 def process_delete_announcement():
     announcement_id = request.form['AID']
-    db.session.delete(announcement_id)
+    announcement_to_delete = Announcement.query.get_or_404(announcement_id)
+    db.session.delete(announcement_to_delete)
     db.session.commit()
     return redirect(url_for('dashboard'))
 
